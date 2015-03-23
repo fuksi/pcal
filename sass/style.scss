@@ -8,3 +8,22 @@ Version:1.0
 
 @import 'config';
 @import 'bootstrap';
+
+.sideBar {
+	width: 20%;
+	float: left;
+	background-color: #f5f5f5;
+}
+.header {
+	height: 50px;
+	border-bottom: 1px solid #999999;
+	border-right: 1px solid #999999;
+}
+.mainCal {
+	width: 80%;
+	float: left;
+	background-color: #fff;
+}
+.row.row1 {
+	color: red;
+}
