@@ -3644,18 +3644,28 @@ table {
   float: left;
   background-color: #f5f5f5; }
 
-/* line 17, ../sass/style.scss */
+/* line 18, ../sass/style.scss */
 .header {
   height: 50px;
   border-bottom: 1px solid #999999;
   border-right: 1px solid #999999; }
 
-/* line 22, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 .mainCal {
   width: 80%;
   float: left;
   background-color: #fff; }
 
-/* line 27, ../sass/style.scss */
-.row.row1 {
-  color: red; }
+/* line 29, ../sass/style.scss */
+.main {
+  width: 100%; }
+
+/* line 32, ../sass/style.scss */
+.row.rowDay {
+  height: 50px;
+  border-bottom: 1px solid #999999; }
+
+/* line 37, ../sass/style.scss */
+.time {
+  padding-top: 69px;
+  text-align: center; }
