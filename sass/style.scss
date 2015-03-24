@@ -1,4 +1,4 @@
-/*!
+/*
 Bootstrap grid with sass
 Repo: https://github.com/fuksi/bootstrap-grid-sass
 Author: Phuc Tran
@@ -9,15 +9,16 @@ Version:1.0
 @import 'config';
 @import 'bootstrap';
 @import 'mixins	';
-#bg_img{
-	position: relative; 
+body{
+	background-image: url("../img/background.jpg");
+	position: fixed; 
   	top: 0; 
   	left: 0;
 	background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .slide_bg {
@@ -26,4 +27,23 @@ Version:1.0
 	width: 1200px;
 	height: 1000px;
 	@include linear-gradient(#ff3800, #fb724c);
+}
+
+.main {
+	float: left;
+	max-width: 75%;
+	position: absolute;
+	margin-left:0;
+	width: 1200px;
+	height: 1000px;
+	@include linear-gradient(#ff3800, #fb724c);
+}
+
+.sidebar {
+	float: right;
+	max-width: 25%;
+	background-color: #aa8d85;
+	opacity: 0.5;
+	width: 400px;
+	height: 1200px;
 }
