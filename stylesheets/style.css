@@ -4562,31 +4562,13 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   width: 100%;
   height: auto;
+  font-family: Roboto;
 }
 
-/* line 24, ../sass/style.scss */
-.slide_bg {
-  position: absolute;
-  margin-left: 0;
-  width: 1200px;
-  height: 1000px;
-  opacity: 0.6;
-  background: -webkit-linear-gradient(#ff3800, #fb724c);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#ff3800, #fb724c);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#ff3800, #fb724c);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#ff3800, #fb724c);
-  /* Standard syntax */
-}
-
-/* line 32, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 .main {
   float: left;
   max-width: 75%;
@@ -4594,23 +4576,45 @@ body {
   margin-left: 0;
   width: 1200px;
   height: 1000px;
-  opacity: 0.6;
-  background: -webkit-linear-gradient(#ff3800, #fb724c);
+  background: -webkit-linear-gradient(rgba(255, 56, 0, 0.6), rgba(255, 114, 76, 0.6));
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#ff3800, #fb724c);
+  background: -o-linear-gradient(rgba(255, 56, 0, 0.6), rgba(255, 114, 76, 0.6));
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#ff3800, #fb724c);
+  background: -moz-linear-gradient(rgba(255, 56, 0, 0.6), rgba(255, 114, 76, 0.6));
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#ff3800, #fb724c);
+  background: linear-gradient(rgba(255, 56, 0, 0.6), rgba(255, 114, 76, 0.6));
   /* Standard syntax */
 }
 
-/* line 42, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 .sidebar {
   float: right;
   max-width: 25%;
-  background-color: #aa8d85;
-  opacity: 0.5;
+  background-color: rgba(170, 141, 133, 0.5);
   width: 400px;
   height: 1200px;
+  color: white;
+}
+
+/* line 43, ../sass/style.scss */
+.sb_content {
+  margin: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* line 49, ../sass/style.scss */
+input {
+  width: 98%;
+  height: 20px;
+}
+
+/* line 54, ../sass/style.scss */
+button {
+  color: white;
+  border-radius: 2px;
+  width: 98%;
+  height: 20px;
+  font-size: 75%;
+  text-align: center;
 }
