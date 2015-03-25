@@ -9,6 +9,9 @@ Version:1.0
 @import 'config';
 @import 'bootstrap';
 @import 'mixins	';
+
+//------------------------- GENERAL STYLES -----------------------------//
+
 body{
 	background-image: url("../img/background.jpg");
 	position: fixed; 
@@ -20,6 +23,8 @@ body{
     font-family: Roboto;
 }
 
+//------------------------- MAIN AREA -----------------------------//
+
 .main {
 	float: left;
 	max-width: 75%;
@@ -30,6 +35,8 @@ body{
 	@include linear-gradient (rgba(255, 56, 0, 0.6), rgba(255,114,76, 0.6));
 
 }
+
+//------------------------- SIDEBAR AREA -----------------------------//
 
 .sidebar {
 	float: right;
@@ -51,12 +58,34 @@ input {
 	height: 20px;
 }
 
+#email {
+	border: 1px solid rgba(153,214,88,1);
+	
+	// outer box shadow
+    -webkit-box-shadow: 0px 0px 0px 4px rgba(153,214,88,0.8);
+    -moz-box-shadow: 0px 0px 0px 4px rgba(153,214,88,0.8);
+    box-shadow: 0px 0px 0px 4px rgba(153,214,88,0.8);
+    border-radius: 2px;
+}
+
+#password {
+	border: 1px solid rgba(248,101,86,1);
+	
+	// outer box shadow
+    -webkit-box-shadow: 0px 0px 0px 4px rgba(248,101,86,0.8);
+    -moz-box-shadow: 0px 0px 0px 4px rgba(248,101,86,0.8);
+    box-shadow: 0px 0px 0px 4px rgba(248,101,86,0.8);
+    border-radius: 2px;
+}
+
 button {
-color: white;
-border-radius: 2px;
+color: rgba(133, 133, 133, 0.8);
+box-shadow: inset 0px -1px 5px -1px rgba(0, 0, 0, 0.4); //inner shadow for the button
+border-radius: 7px;
 width: 98%;
-height: 20px;
-font-size: 75%;
+height: 30px;
+font-size: 85%;
 text-align: center;
+@include linear-gradient (rgba(255, 255, 255, 1), rgba(255, 254, 255, 0.9));
 
 }
