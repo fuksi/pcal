@@ -27,7 +27,8 @@ body{
 
 @font-face {
     font-family: roboto;
-    src: url("../fonts/roboto/RobotoCondensed-Light.ttf"); // need to finalise the fonts
+    src: url("../fonts/roboto/Roboto-Regular.ttf"); // need to finalise the fonts
+    font-size: 24px;
 }
 
 //------------------------- MAIN AREA -----------------------------//
@@ -97,7 +98,11 @@ text-align: center;
 }
 
 .bottom {
-	position: fixed;
-    bottom: 10px;
-    
+	position: relative;
+	bottom: 0;
+}
+
+.container {
+	position: absolute;
+	margin-top: 120%;  // NEED TO BE FIXXED !!!!
 }
