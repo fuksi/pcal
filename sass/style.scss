@@ -21,6 +21,13 @@ body{
     width: 100%;
     height: auto;
     font-family: Roboto;
+    background-repeat: no-repeat;
+    font-family: roboto;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("../fonts/roboto/RobotoCondensed-Light.ttf"); // need to finalise the fonts
 }
 
 //------------------------- MAIN AREA -----------------------------//
@@ -87,5 +94,10 @@ height: 30px;
 font-size: 85%;
 text-align: center;
 @include linear-gradient (rgba(255, 255, 255, 1), rgba(255, 254, 255, 0.9));
+}
 
+.bottom {
+	position: fixed;
+    bottom: 10px;
+    
 }
