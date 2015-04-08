@@ -3638,50 +3638,167 @@ table {
   display: inline-block;
   fonrt-size: 0.000001%; }
 
-/* line 13, ../sass/style.scss */
+/*
+//SideBar Calender here
 .sideBar {
-  width: 20%;
-  float: left;
-  background-color: #f5f5f5; }
+	width: 20%;
+	float: left;
+	background-color: #f5f5f5;
+}
+.sideHeader{
+	height: 50px;
+	border-bottom: 1px solid #999999;
+	border-right: 1px solid #999999;
+}
+.sideHeader ul {
+   max-width: 299px;
+   text-align: center;
+}
+.sideHeader ul li {
+	display: inline-block;
+	padding: 14px;
+}
+.name {
+	color: #ff5d29;
+	position: relative;
+	bottom: 7px;
+}
+.titleCal ul li, .titleDay ul li, .titleFilter ul li {
+	display: inline-block;
+}
+.sideHeadLeft {
+	padding: 30px 0 5px 20px;	
+	font-weight: bold;
+}
+.sideHeadRight {
+	/*padding: 30px 15px 5px 155px;
+	font-weight: bold;*/
+/*	position: relative;
+	
+}
+.rotate {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.titleMon, .titleDay, .numDay{
+	text-align: center;
+}
+.titleMon ul li{
+	display: inline-block;
+	padding: 26.5px;
+	font-weight: bold;
+}
 
-/* line 18, ../sass/style.scss */
-.sideHeader {
-  height: 50px;
+.titleDay ul li {
+	padding: 0px 10px 15px 10px;
+	color: #737373;
+}
+.numDay ul li {
+	display: inline-block;
+	padding: 0px 12px 15px 11px;
+}
+.lightGrey {
+	color: #aeaeae;
+}
+.filterItem ul line-height, .account ul li{
+	display: inline-block;
+	padding: 0 5px 20px 15px;
+}
+//Main Calender here
+.mainCal {
+	width: 80%;
+	float: left;
+	background-color: #fff;
+}
+.mainHeader {
+	height: 50px;
+	border-bottom: 1px solid #999999;
+} 
+.mainHeader ul{
+	
+	max-width: 1200px;  
+}
+.mainHeader ul li {
+	display: inline-block;
+	padding: 8px 9px;
+}
+.blackHead {
+	color: #000;
+	font-weight: bold;
+	position: relative;
+	bottom: 7px;
+}
+.greyLightHead {
+	color: #737373;
+	font-weight: bold;
+	position: relative;
+	bottom: 7px;
+}
+.greyDarkHead {
+	color: #646464;
+	font-weight: 900;
+	font-size: 25px;
+	position: relative;
+	bottom: 7px;
+}
+.main {
+	width: 100%;
+}
+
+.rowDay {
+	height: 50px;
   border-bottom: 1px solid #999999;
+    
+}
+.time {
+	padding-top: 69px;
+	text-align: center;
+}  END OF INDEX STYLE */
+/* line 134, ../sass/style.scss */
+.sidebar {
+  width: 20%;
+  max-width: 300px;
+  position: fixed;
+  background-color: #f5f5f5;
+  height: 100%;
+  float: left;
   border-right: 1px solid #999999; }
 
-/* line 23, ../sass/style.scss */
-.sideHeader ul {
-  max-width: 299px;
-  text-align: center; }
+/* line 143, ../sass/style.scss */
+.headerSide, .headerMain {
+  height: 50px;
+  text-align: center;
+  border-bottom: 1px solid #999999; }
 
-/* line 27, ../sass/style.scss */
-.sideHeader ul li {
+/* line 148, ../sass/style.scss */
+.headerSide li {
   display: inline-block;
-  padding: 14px; }
+  margin: 15px; }
 
-/* line 31, ../sass/style.scss */
-.name {
-  color: #ff5d29;
+/* line 152, ../sass/style.scss */
+.middle {
   position: relative;
   bottom: 7px; }
 
-/* line 36, ../sass/style.scss */
-.titleCal ul li, .titleDay ul li, .titleFilter ul li {
-  display: inline-block; }
-
-/* line 39, ../sass/style.scss */
-.sideHeadLeft {
-  padding: 30px 0 5px 20px;
+/* line 156, ../sass/style.scss */
+.title li {
+  display: inline-block;
   font-weight: bold; }
 
-/* line 43, ../sass/style.scss */
-.sideHeadRight {
-  /*padding: 30px 15px 5px 155px;
-  font-weight: bold;*/
-  position: relative; }
-
-/* line 49, ../sass/style.scss */
+/*.leftSide {
+	float: left;
+ 	width: 60px;
+ 	margin-left: 20px;
+ 	margin-top: 20px;
+}
+.rightSide {
+	float: left;
+	margin-left: 160px;
+}*/
+/* line 171, ../sass/style.scss */
 .rotate {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -3689,87 +3806,75 @@ table {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
 
-/* line 56, ../sass/style.scss */
-.titleMon, .titleDay, .numDay {
-  text-align: center; }
+/* line 179, ../sass/style.scss */
+li {
+  display: inline-block; }
 
-/* line 59, ../sass/style.scss */
-.titleMon ul li {
-  display: inline-block;
-  padding: 26.5px;
-  font-weight: bold; }
-
-/* line 65, ../sass/style.scss */
-.titleDay ul li {
-  padding: 0px 10px 15px 10px;
+/* line 183, ../sass/style.scss */
+.titleDay li {
+  padding: 0px 8px 10px 15px;
   color: #737373; }
 
-/* line 69, ../sass/style.scss */
-.numDay ul li {
-  display: inline-block;
-  padding: 0px 12px 15px 11px; }
+/* line 187, ../sass/style.scss */
+.numDay li {
+  padding: 0px 11px 10px 15px; }
 
-/* line 73, ../sass/style.scss */
-.lightGrey {
-  color: #aeaeae; }
-
-/* line 76, ../sass/style.scss */
-.filterItem ul li {
-  display: inline-block;
-  padding: 0 5px 20px 15px; }
-
-/* line 87, ../sass/style.scss */
-.mainCal {
-  width: 80%;
+/* line 190, ../sass/style.scss */
+.leftSide {
   float: left;
-  background-color: #fff; }
+  width: 180px;
+  margin: 15px 0px 0px 20px; }
 
-/* line 92, ../sass/style.scss */
-.mainHeader {
-  height: 50px;
-  border-bottom: 1px solid #999999; }
+/* line 195, ../sass/style.scss */
+.rightSide {
+  float: left;
+  margin: 15px 0px 0px 40px; }
 
-/* line 96, ../sass/style.scss */
-.mainHeader ul {
-  max-width: 1200px; }
+/* line 200, ../sass/style.scss */
+.footer {
+  text-align: center;
+  position: relative;
+  height: 135px;
+  top: 100px;
+  border-top: 1px solid #999999; }
 
-/* line 102, ../sass/style.scss */
-.mainHeader ul li {
-  display: inline-block;
+/* line 208, ../sass/style.scss */
+button {
+  margin-top: 20px; }
+
+/* line 213, ../sass/style.scss */
+.main {
+  width: 80%;
+  float: right; }
+
+/* line 217, ../sass/style.scss */
+.headerMain li {
   padding: 8px 9px; }
 
-/* line 106, ../sass/style.scss */
-.blackHead {
-  color: #000;
-  font-weight: bold;
-  position: relative;
-  bottom: 7px; }
-
-/* line 112, ../sass/style.scss */
-.greyLightHead {
-  color: #737373;
-  font-weight: bold;
-  position: relative;
-  bottom: 7px; }
-
-/* line 118, ../sass/style.scss */
-.greyDarkHead {
-  color: #646464;
-  font-weight: 900;
-  font-size: 25px;
-  position: relative;
-  bottom: 7px; }
-
-/* line 125, ../sass/style.scss */
-.main {
+/* line 220, ../sass/style.scss */
+.mainCal {
   width: 100%; }
 
-/* line 129, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 .rowDay {
-  height: 50px;
+  padding-top: 15px;
+  padding-left: 5px;
+  height: 35px;
+  text-align: center;
   border-bottom: 1px solid #999999; }
 
-/* line 134, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
+.colTime {
+  border-right: 1px solid #999999; }
+
+/* line 233, ../sass/style.scss */
 .time {
   padding-top: 69px;
   text-align: center; }
+
+/* line 239, ../sass/style.scss */
+.box {
+  width: 140px;
+  height: 75px;
+  border-bottom: 1px solid #999999;
+  border-right: 1px solid #999999; }
