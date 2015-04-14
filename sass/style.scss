@@ -97,12 +97,22 @@ text-align: center;
 @include linear-gradient (rgba(255, 255, 255, 1), rgba(255, 254, 255, 0.9));
 }
 
-.bottom {
-	position: relative;
-	bottom: 0;
+
+//----------- CREATING NEW ACCOUNT -----------//
+#p1, #p2, #p3{
+	cursor: pointer;
 }
 
-.container {
-	position: absolute;
-	margin-top: 127%;
+.accordion1, .accordion2, .accordion3 {
+	display: none;
 }
+
+//.bottom {
+//	position: relative;
+//	bottom: 0;
+//}
+
+//.container {
+//	position: absolute;
+//	margin-top: 127%;
+//}

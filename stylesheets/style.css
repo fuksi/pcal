@@ -4653,14 +4653,12 @@ button {
   /* Standard syntax */
 }
 
-/* line 100, ../sass/style.scss */
-.bottom {
-  position: relative;
-  bottom: 0;
+/* line 102, ../sass/style.scss */
+#p1, #p2, #p3 {
+  cursor: pointer;
 }
 
-/* line 105, ../sass/style.scss */
-.container {
-  position: absolute;
-  margin-top: 127%;
+/* line 106, ../sass/style.scss */
+.accordion1, .accordion2, .accordion3 {
+  display: none;
 }
