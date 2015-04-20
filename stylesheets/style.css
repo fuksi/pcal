@@ -4619,22 +4619,31 @@ input {
 /* line 69, ../sass/style.scss */
 #email {
   border: 1px solid #99d658;
-  -webkit-box-shadow: 0px 0px 0px 4px rgba(153, 214, 88, 0.8);
-  -moz-box-shadow: 0px 0px 0px 4px rgba(153, 214, 88, 0.8);
-  box-shadow: 0px 0px 0px 4px rgba(153, 214, 88, 0.8);
-  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(153, 214, 88, 0.8);
+  -moz-box-shadow: 0px 0px 0px 2px rgba(153, 214, 88, 0.8);
+  box-shadow: 0px 0px 0px 2px rgba(153, 214, 88, 0.8);
+  border-radius: 1px;
 }
 
 /* line 79, ../sass/style.scss */
 #password {
   border: 1px solid #f86556;
-  -webkit-box-shadow: 0px 0px 0px 4px rgba(248, 101, 86, 0.8);
-  -moz-box-shadow: 0px 0px 0px 4px rgba(248, 101, 86, 0.8);
-  box-shadow: 0px 0px 0px 4px rgba(248, 101, 86, 0.8);
-  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(248, 101, 86, 0.8);
+  -moz-box-shadow: 0px 0px 0px 2px rgba(248, 101, 86, 0.8);
+  box-shadow: 0px 0px 0px 2px rgba(248, 101, 86, 0.8);
+  border-radius: 1px;
 }
 
 /* line 89, ../sass/style.scss */
+#forgotPass {
+  border: 1px solid #9bc9fa;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(155, 201, 250, 0.8);
+  -moz-box-shadow: 0px 0px 0px 2px rgba(155, 201, 250, 0.8);
+  box-shadow: 0px 0px 0px 2px rgba(155, 201, 250, 0.8);
+  border-radius: 1px;
+}
+
+/* line 99, ../sass/style.scss */
 button {
   color: rgba(133, 133, 133, 0.8);
   box-shadow: inset 0px -1px 5px -1px rgba(0, 0, 0, 0.4);
@@ -4653,12 +4662,52 @@ button {
   /* Standard syntax */
 }
 
-/* line 102, ../sass/style.scss */
-#p1, #p2, #p3 {
+/* line 110, ../sass/style.scss */
+#p1 {
   cursor: pointer;
+  display: inline-block;
+  margin: 5px;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 1px;
 }
 
-/* line 106, ../sass/style.scss */
-.accordion1, .accordion2, .accordion3 {
+/* line 119, ../sass/style.scss */
+#p2 {
+  cursor: pointer;
+  display: inline-block;
+  margin: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
+  border-radius: 1px;
+}
+
+/* line 128, ../sass/style.scss */
+#p3 {
+  cursor: pointer;
+  display: inline-block;
+  margin: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
+  border-radius: 1px;
+}
+
+/* line 137, ../sass/style.scss */
+.accordion1 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* line 143, ../sass/style.scss */
+.accordion2 {
   display: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* line 150, ../sass/style.scss */
+.accordion3 {
+  display: none;
+  margin-left: 20px;
+  margin-right: 20px;
 }

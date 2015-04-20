@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>pCal Login</title>
 <link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" type="text/css" href="script/slick/slick.css"/>
 <script src="script/js/jquery-2.1.3.js"></script>
 <script src="script/js/login.js"></script>
 </head>
@@ -13,21 +14,22 @@
 <div class="row main">MAIN
 	<div class="large-24 columns">
 		<div class ="row">
+			<div class="slider">
+				<div><img src="http://placehold.it/450x450"></div>
+				<div><img src="http://placehold.it/450x450"></div>
+				<div><img src="http://placehold.it/450x450"></div>
+				<div><img src="http://placehold.it/450x450"></div>
+				<div><img src="http://placehold.it/450x450"></div>
+			</div>
 		</div>
 	</div>
 </div>
 
 <div class="sidebar">
+
 	<div class="newAcc">
 		<p id="p1">Create an account</p>
 		<hr>
-	</div>
-	<div class="signIn">
-		<p id="p2">Sign In</p>
-		<hr>	
-	</div>
-	<div class="resetPass">
-		<p id="p3">Forgot Password?</p>
 	</div>
 	<div class="accordion1">
 		
@@ -46,7 +48,10 @@
 			<button type="button" class="btn">Register</button>
 		</div>
 	</div>
-	<div class="accordion2">
+
+	<div class="signIn">
+		<p id="p2">Sign In</p>
+		<div class="accordion2">
 		
 		<div class="form">
 			<br>
@@ -57,19 +62,30 @@
 			<input id="password" type="text" name="password" value="">
 			
 			<br><br>
-			<button type="button" class="btn">Sign In </button>
+			<button type="button" class="btn">Sign In </button>			
 		</div>
 	</div>
-	<div class="accordion3">	
+		<hr>	
+	</div>
+	
+
+	<div class="resetPass">
+		<p id="p3">Forgot Password?</p>
+		<hr>
+		<div class="accordion3">	
 		<br>
 		<input id="forgotPass" type="text" name="newPassword" value="enter your primary email">	
 			<br><br>
 			<button type="button" class="btn">Reset</button>
-		</div>
+	</div>
+	</div>
+	
+	
+
 	</div>
 
-</div>
 
+<script type="text/javascript" src="script/slick/slick.min.js"></script>
 </body>
 
 </html>
