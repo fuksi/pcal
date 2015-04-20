@@ -4,8 +4,10 @@
 	position: relative;
 	// width: 20%;
 	height: 100%;
-	max-width: 300px;
+	width: 25%;
+	float: left;
 	border-right: 1px solid $grey;
+	box-sizing: border-box;
 	h3 {
 		font-size: 20px;
 	}
