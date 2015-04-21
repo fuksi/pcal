@@ -4785,13 +4785,15 @@ body {
   position: absolute;
   bottom: 0;
   padding: 15px;
+  box-sizing: border-box;
+  width: 100%;
   border-top: 1px solid #999999;
 }
-/* line 68, ../sass/_sidebar.scss */
+/* line 70, ../sass/_sidebar.scss */
 .sidebar-footer .link-container {
   width: 100%;
 }
-/* line 71, ../sass/_sidebar.scss */
+/* line 73, ../sass/_sidebar.scss */
 .sidebar-footer a {
   width: 100%;
   display: inline-block;
@@ -4804,7 +4806,7 @@ body {
   text-align: center;
   vertical-align: center;
 }
-/* line 82, ../sass/_sidebar.scss */
+/* line 84, ../sass/_sidebar.scss */
 .sidebar-footer a:first-child {
   margin-bottom: 15px;
 }
@@ -4965,7 +4967,7 @@ body {
 /* line 132, ../sass/_main-calendar.scss */
 .actual-events {
   position: absolute;
-  top: 0;
+  top: 1px;
   width: 100%;
 }
 /* line 136, ../sass/_main-calendar.scss */
