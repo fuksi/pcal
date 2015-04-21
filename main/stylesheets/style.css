@@ -4703,7 +4703,7 @@ table {
   background: #666;
 }
 
-/* line 8, ../sass/_generals.scss */
+/* line 9, ../sass/_generals.scss */
 body {
   background: #f5f5f5;
   height: 100%;
@@ -4809,7 +4809,14 @@ body {
   margin-bottom: 15px;
 }
 
-/* line 2, ../sass/_main-calendar.scss */
+/* line 1, ../sass/_main-calendar.scss */
+.calendar {
+  float: left;
+  width: 75%;
+  box-sizing: border-box;
+}
+
+/* line 7, ../sass/_main-calendar.scss */
 .calendar-header {
   background: #f5f5f5;
   padding: 15px 0;
@@ -4818,15 +4825,15 @@ body {
   box-sizing: border-box;
   border-bottom: 1px solid #999999;
 }
-/* line 9, ../sass/_main-calendar.scss */
+/* line 14, ../sass/_main-calendar.scss */
 .calendar-header > * {
   display: inline-block;
 }
-/* line 11, ../sass/_main-calendar.scss */
+/* line 16, ../sass/_main-calendar.scss */
 .calendar-header > * > * {
   vertical-align: top;
 }
-/* line 17, ../sass/_main-calendar.scss */
+/* line 22, ../sass/_main-calendar.scss */
 .calendar-header .center-nav button {
   margin: 0 3px;
   background: none;
@@ -4834,68 +4841,119 @@ body {
   font-size: 20px;
   color: #999999;
 }
-/* line 23, ../sass/_main-calendar.scss */
+/* line 28, ../sass/_main-calendar.scss */
 .calendar-header .center-nav button.active {
   color: #ff5d29;
 }
-/* line 26, ../sass/_main-calendar.scss */
+/* line 31, ../sass/_main-calendar.scss */
 .calendar-header .center-nav button.prev, .calendar-header .center-nav button.next {
   color: black;
   font-weight: bold;
   transform: scale(1, 1.5);
 }
-/* line 31, ../sass/_main-calendar.scss */
+/* line 36, ../sass/_main-calendar.scss */
 .calendar-header .center-nav button:hover {
   cursor: pointer;
 }
-/* line 35, ../sass/_main-calendar.scss */
+/* line 40, ../sass/_main-calendar.scss */
 .calendar-header .center-nav .logo {
   display: inline-block;
 }
-/* line 37, ../sass/_main-calendar.scss */
+/* line 42, ../sass/_main-calendar.scss */
 .calendar-header .center-nav .logo img {
   margin: 0 5px;
   height: 24px;
 }
-/* line 42, ../sass/_main-calendar.scss */
+/* line 47, ../sass/_main-calendar.scss */
 .calendar-header .center-nav span {
   font-size: 20px;
 }
-/* line 53, ../sass/_main-calendar.scss */
+/* line 52, ../sass/_main-calendar.scss */
 .calendar-header input {
   padding: 3px 7px;
   border: 1px solid #999999;
   border-radius: 10px;
 }
-/* line 59, ../sass/_main-calendar.scss */
+/* line 58, ../sass/_main-calendar.scss */
 .calendar-header .search {
   position: relative;
 }
-/* line 61, ../sass/_main-calendar.scss */
+/* line 60, ../sass/_main-calendar.scss */
 .calendar-header .search:after {
   content: url("../images/search.png");
   position: absolute;
   right: 10px;
   top: 5px;
 }
-/* line 67, ../sass/_main-calendar.scss */
+/* line 66, ../sass/_main-calendar.scss */
 .calendar-header .search:focus {
   outline: none;
 }
-/* line 71, ../sass/_main-calendar.scss */
+/* line 70, ../sass/_main-calendar.scss */
 .calendar-header .left-search {
   float: left;
   margin-left: 20px;
 }
-/* line 75, ../sass/_main-calendar.scss */
+/* line 74, ../sass/_main-calendar.scss */
 .calendar-header .right-search {
   float: right;
   margin-right: 20px;
 }
 
-/* line 81, ../sass/_main-calendar.scss */
-.calendar {
-  float: left;
-  width: 75%;
+/* line 80, ../sass/_main-calendar.scss */
+.weekdays {
+  border-bottom: 1px solid #999999;
   box-sizing: border-box;
+}
+/* line 83, ../sass/_main-calendar.scss */
+.weekdays .week-number, .weekdays a {
+  text-align: center;
+  padding: 10px 0;
+}
+/* line 87, ../sass/_main-calendar.scss */
+.weekdays .week-number {
+  font-weight: 700;
+  border-right: 1px solid #999999;
+}
+/* line 91, ../sass/_main-calendar.scss */
+.weekdays a {
+  text-decoration: none;
+  color: black;
+}
+/* line 95, ../sass/_main-calendar.scss */
+.weekdays a.active {
+  color: #ff5d29;
+}
+/* line 98, ../sass/_main-calendar.scss */
+.weekdays a.prev-week {
+  color: #999999;
+}
+
+/* line 103, ../sass/_main-calendar.scss */
+.time {
+  border-right: 1px solid #999999;
+}
+/* line 105, ../sass/_main-calendar.scss */
+.time .time-holder {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  height: 75px;
+  text-align: center;
+}
+/* line 111, ../sass/_main-calendar.scss */
+.time .time-holder span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -8px;
+}
+
+/* line 122, ../sass/_main-calendar.scss */
+.events .event-holder {
+  height: 75px;
+  box-sizing: border-box;
+  border-right: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
 }
