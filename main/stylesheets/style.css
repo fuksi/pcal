@@ -4763,35 +4763,38 @@ body {
 /* line 45, ../sass/_sidebar.scss */
 .mini-cal {
   padding-right: 10px;
+  margin-bottom: 60px !important;
 }
-/* line 47, ../sass/_sidebar.scss */
+/* line 48, ../sass/_sidebar.scss */
 .mini-cal #mydate {
   visibility: hidden;
 }
-/* line 50, ../sass/_sidebar.scss */
+/* line 51, ../sass/_sidebar.scss */
 .mini-cal h3 {
   text-align: left;
   margin-bottom: 5px;
 }
 
-/* line 57, ../sass/_sidebar.scss */
+/* line 58, ../sass/_sidebar.scss */
 .filters input, .accounts input {
   font-size: 16px;
   margin-bottom: 7px;
 }
 
-/* line 63, ../sass/_sidebar.scss */
+/* line 64, ../sass/_sidebar.scss */
 .sidebar-footer {
   position: absolute;
   bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
   padding: 15px;
   border-top: 1px solid #999999;
 }
-/* line 68, ../sass/_sidebar.scss */
+/* line 71, ../sass/_sidebar.scss */
 .sidebar-footer .link-container {
   width: 100%;
 }
-/* line 71, ../sass/_sidebar.scss */
+/* line 74, ../sass/_sidebar.scss */
 .sidebar-footer a {
   width: 100%;
   display: inline-block;
@@ -4804,7 +4807,7 @@ body {
   text-align: center;
   vertical-align: center;
 }
-/* line 82, ../sass/_sidebar.scss */
+/* line 85, ../sass/_sidebar.scss */
 .sidebar-footer a:first-child {
   margin-bottom: 15px;
 }
@@ -4965,7 +4968,7 @@ body {
 /* line 132, ../sass/_main-calendar.scss */
 .actual-events {
   position: absolute;
-  top: 0;
+  top: 1px;
   width: 100%;
 }
 /* line 136, ../sass/_main-calendar.scss */
@@ -4973,12 +4976,62 @@ body {
   width: 94%;
   margin-left: 3%;
   box-sizing: border-box;
-}
-/* line 141, ../sass/_main-calendar.scss */
-.actual-events .event-1 {
   position: absolute;
-  top: 75px;
-  height: 150px;
+}
+/* line 142, ../sass/_main-calendar.scss */
+.actual-events .blue {
   background-color: rgba(170, 197, 229, 0.7);
   border-left: 2px solid #aac5e5;
+}
+/* line 146, ../sass/_main-calendar.scss */
+.actual-events .red {
+  background-color: rgba(192, 70, 70, 0.7);
+  border-left: 2px solid #c04646;
+}
+/* line 150, ../sass/_main-calendar.scss */
+.actual-events .green {
+  background-color: rgba(87, 195, 91, 0.7);
+  border-left: 2px solid #57c35b;
+}
+
+/* line 156, ../sass/_main-calendar.scss */
+.event-1 {
+  top: 75px;
+  height: 150px;
+}
+
+/* line 160, ../sass/_main-calendar.scss */
+.event-2 {
+  top: 225px;
+  height: 75px;
+}
+
+/* line 164, ../sass/_main-calendar.scss */
+.event-3 {
+  top: 300px;
+  height: 100px;
+}
+
+/* line 168, ../sass/_main-calendar.scss */
+.event-4 {
+  top: 600px;
+  height: 300px;
+}
+
+/* line 172, ../sass/_main-calendar.scss */
+.event-5 {
+  top: 450px;
+  height: 175px;
+}
+
+/* line 176, ../sass/_main-calendar.scss */
+.event-6 {
+  top: 375px;
+  height: 150px;
+}
+
+/* line 180, ../sass/_main-calendar.scss */
+.event-7 {
+  top: 75px;
+  height: 150px;
 }

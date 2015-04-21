@@ -131,18 +131,53 @@
 
 .actual-events {
 	position: absolute;
-	top: 0;
+	top: 1px;
 	width: 100%;
 	.event {
 		width:94%;
 		margin-left: 3%;
 		box-sizing: border-box;
-	}
-	.event-1 {
 		position: absolute;
-		top: 75px;
-		height: 150px;
+	}
+	.blue {
 		background-color: rgba(170, 197, 229, 0.7);
 		border-left: 2px solid rgb(170, 197, 229);
 	}
+	.red {
+		background-color: rgba(192, 70, 70, 0.7);
+		border-left: 2px solid rgb(192, 70, 70);
+	}
+	.green {
+		background-color: rgba(87, 195,91, 0.7);
+		border-left: 2px solid rgb(87, 195,91);
+	}
+}
+
+.event-1 {	
+	top: 75px;
+	height: 150px;
+}
+.event-2 {	
+	top: 225px;
+	height: 75px;
+}
+.event-3 {	
+	top: 300px;
+	height: 100px;
+}
+.event-4 {	
+	top: 600px;
+	height: 300px;
+}
+.event-5 {	
+	top: 450px;
+	height: 175px;
+}
+.event-6 {	
+	top: 375px;
+	height: 150px;
+}
+.event-7 {	
+	top: 75px;
+	height: 150px;
 }

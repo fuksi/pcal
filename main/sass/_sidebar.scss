@@ -44,6 +44,7 @@
 	}
 		.mini-cal {
 			padding-right: 10px;
+			margin-bottom: 60px !important;
 			#mydate {
 				visibility: hidden;
 			}
@@ -63,6 +64,8 @@
 	.sidebar-footer {
 		position: absolute;
 		bottom: 0;
+		box-sizing: border-box;
+		width: 100%;
 		padding: 15px;
 		border-top: 1px solid $grey;
 		.link-container {
