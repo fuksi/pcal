@@ -118,11 +118,31 @@
 	}
 }
 
-.events {
+.calendar-content {
+	position: relative;
 	.event-holder {
 		height: 75px;
 		box-sizing: border-box;
 		border-right: 1px solid $light-grey;
 		border-bottom: 1px solid $light-grey;
+	}
+	
+}
+
+.actual-events {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	.event {
+		width:94%;
+		margin-left: 3%;
+		box-sizing: border-box;
+	}
+	.event-1 {
+		position: absolute;
+		top: 75px;
+		height: 150px;
+		background-color: rgba(170, 197, 229, 0.7);
+		border-left: 2px solid rgb(170, 197, 229);
 	}
 }

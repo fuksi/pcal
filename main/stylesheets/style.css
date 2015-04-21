@@ -4950,10 +4950,35 @@ body {
   bottom: -8px;
 }
 
-/* line 122, ../sass/_main-calendar.scss */
-.events .event-holder {
+/* line 121, ../sass/_main-calendar.scss */
+.calendar-content {
+  position: relative;
+}
+/* line 123, ../sass/_main-calendar.scss */
+.calendar-content .event-holder {
   height: 75px;
   box-sizing: border-box;
   border-right: 1px solid #b2b2b2;
   border-bottom: 1px solid #b2b2b2;
+}
+
+/* line 132, ../sass/_main-calendar.scss */
+.actual-events {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* line 136, ../sass/_main-calendar.scss */
+.actual-events .event {
+  width: 94%;
+  margin-left: 3%;
+  box-sizing: border-box;
+}
+/* line 141, ../sass/_main-calendar.scss */
+.actual-events .event-1 {
+  position: absolute;
+  top: 75px;
+  height: 150px;
+  background-color: rgba(170, 197, 229, 0.7);
+  border-left: 2px solid #aac5e5;
 }
