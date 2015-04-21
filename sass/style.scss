@@ -44,6 +44,18 @@ body{
 
 }
 
+//------slick slider------//
+.slick-prev { left: -25px; }
+.slick-prev:before { content: '\2190'; }
+
+.slick-next { right: -25px; }
+.slick-next:before { content: '\2192'; }
+
+.slick-slide{
+margin-right: 30px;
+margin-left: 30px;
+}
+
 //------------------------- SIDEBAR AREA -----------------------------//
 
 .sidebar {

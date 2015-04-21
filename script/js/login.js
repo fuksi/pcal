@@ -32,9 +32,12 @@ $(document).ready(function() {
 
 
 	// slick SLIDER
-	$('.slider').slick({
-		// Enables tabbing and arrow key navigation
-		//accessibility: true,
-		//adaptiveHeight: false,
-	}); 
+	$('.carousel').slick({
+	  dots: false,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 1,
+	  centerMode: false,
+	  variableWidth: true
+	});
 });
