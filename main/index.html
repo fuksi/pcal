@@ -1,0 +1,168 @@
+<html>
+<head>
+	<title>pCal</title>
+
+	<!-- Enqueuing styles -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+	<!-- Enqueuing scripts -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/glDatePicker.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div class="main-container">
+
+
+	<!-- Sidebar templating -->
+
+		<div class="sidebar">    
+			<div class="top-nav">
+				<img class="toggle-nav" src="images/toggle-nav.png"></img>
+				<img class="toggle-setting" src="images/toggle-setting.png"></img>
+				<h3 class="block-centert">Phuc D.T Thien</h3>
+			</div>
+
+			<div class="sidebar-content">
+
+				<div class="mini-cal">
+					<h3>Calendar</h3>
+					<input type="text" id="mydate" gldp-id="mydate" />
+				    <div gldp-el="mydate"
+				        style="width:100%; height:200px;">
+				    </div>
+				</div>
+
+				<div class="filters">
+					<h3>Filter</h3>
+					<form>
+						<input type="checkbox" value="tech" name="filters">Public - Tech team <br>
+						<input type="checkbox" value="fb" name="filters">Public - Facebook friends <br>
+						<input type="checkbox" value="work" name="filters">Private - Work <br>
+						<input type="checkbox" value="school" name="filters">Private - School <br>
+					</form>
+				</div>
+
+				<div class="accounts">
+					<h3>Accounts</h3>
+					<form>
+						<input type="checkbox" value="tech" name="filters">Gmail<br>
+						<input type="checkbox" value="fb" name="filters">iCloud<br>
+					</form>
+				</div>
+
+			</div>
+
+			<div class="sidebar-footer block-center">
+				<div class="link-container">
+					<a href="#">Download pCal for Mac</a>
+					<a href="#">Support and feedback</a>
+				</div>
+			</div>
+		</div>
+
+	<!-- End sidebar templating -->
+
+	<!-- Main calendar -->
+		<div class="calendar row">
+			<!-- Header -->
+			<div class="calendar-header block-center">
+				<div class="search left-search">
+					<input type="text" name="event-search" placeholder="find event i.e baz">
+				</div>
+				<div class="center-nav">
+					<button class="active week">Week</button>
+					<span>|</span><button class="month">Month</button>
+					<button class="prev">&lt;</button>
+					<a class="logo" href="#">
+						<img src="images/logo.png">
+					</a>
+					<button class="next">&gt;</button>
+					<button class="active me">Me</button>
+					<span>|</span><button class="other">Bar's cal</button>
+				</div>
+				<div class="search right-search">	
+					<input type="text" name="calendar-search" placeholder="Find out if Bar is free tmr">
+				</div>
+			</div>
+			<!-- End header -->
+
+			<!-- Week days row -->
+			<div class="weekdays row">
+				<span class="col-xs-2 week-number">W 11</span>
+				<a href="#" class="col-xs-3 prev-week">Sun 8/3</a>
+				<a href="#" class="col-xs-3">Mon 9/3</a>
+				<a href="#" class="col-xs-3">Tue 10/3</a>
+				<a href="#" class="col-xs-3 active">Wed 11/3</a>
+				<a href="#" class="col-xs-3">Thu 12/3</a>
+				<a href="#" class="col-xs-3">Fri 13/3</a>
+				<a href="#" class="col-xs-3">Sat 14/3</a>
+			</div>
+			<!-- End week days row -->
+
+			<!-- Time and events -->
+			<div class="time-events row">
+				<div class="time col-xs-2">
+					<div class="time-holder"><span>6 AM</span></div>
+					<div class="time-holder"><span>7 AM</span></div>
+					<div class="time-holder"><span>8 AM</span></div>
+					<div class="time-holder"><span>9 AM</span></div>
+					<div class="time-holder"><span>10 AM</span></div>
+					<div class="time-holder"><span>11 AM</span></div>
+					<div class="time-holder"><span>12 AM</span></div>
+					<div class="time-holder"><span>1 PM</span></div>
+					<div class="time-holder"><span>2 PM</span></div>
+					<div class="time-holder"><span>3 PM</span></div>
+					<div class="time-holder"><span>4 PM</span></div>
+					<div class="time-holder"><span>5 PM</span></div>
+					<div class="empty-time-holder time-holder"></div>
+				</div>
+				<div class="calendar-content wide-col-xs-3">
+					<div class="event-holders">
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+					</div>
+					<div class="actual-events">
+						<div class="event event-1">
+							Hohoho
+						</div>
+					</div>
+				</div>		
+
+
+				<!-- <div class="placeholder">
+				</div> -->
+			</div>
+		</div>
+
+	<!-- End main calendar -->
+
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+// Variables
+
+// Columns and gutter
+$grid-columns: 24;
+$grid-gutter-width: 20px;
+// The total number of gutters would be 23 + 1/2 + 1/2 = 24
+
+// Max fixed width
+$max-width: 1200px;
+
+// Max-width / Container max-width
+$max-width-lg: 95%; //1140px
+$max-width-md: 95%; //942px
+$max-width-sm: 95%; //729px
+$max-width-xs: 95%; //456px
+
+//Break points ~ Conventionally: $screen-size-max-width - 1
+$break-xs: 479px; $break-sm: 767px; $break-md: 991px; $break-lg: 1199px;
+
+// Normalize or helper
+//@import 'bootstrap/helpers/normalize';
+@import 'bootstrap/helpers/reset';

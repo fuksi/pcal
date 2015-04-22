@@ -1,4 +1,4 @@
-/*
+/*!
 Bootstrap grid with sass
 Repo: https://github.com/fuksi/bootstrap-grid-sass
 Author: Phuc Tran
@@ -4553,265 +4553,434 @@ table {
   content: "";
   width: 100%;
   display: inline-block;
-  fonrt-size: 0.000001%;
+  font-size: 0.000001%;
 }
 
-/* line 15, ../sass/style.scss */
-body {
-  background-image: url("../img/background.jpg");
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  font-family: Roboto;
-  background-repeat: no-repeat;
-  font-family: roboto;
+/* line 1, ../sass/_gldp.scss */
+.gldp-flatwhite {
+  display: inline-block;
 }
 
-@font-face {
-  font-family: roboto;
-  src: url("../fonts/roboto/Roboto-Regular.ttf");
-  font-size: 24px;
-}
-/* line 36, ../sass/style.scss */
-.main {
-  float: left;
-  max-width: 75%;
-  position: absolute;
-  margin-left: 0;
-  width: 1200px;
-  height: 1000px;
-  background: -webkit-linear-gradient(rgba(255, 56, 0, 0.6), rgba(255, 114, 76, 0.6));
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(rgba(255, 56, 0, 0.6), rgba(255, 114, 76, 0.6));
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgba(255, 56, 0, 0.6), rgba(255, 114, 76, 0.6));
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgba(255, 56, 0, 0.6), rgba(255, 114, 76, 0.6));
-  /* Standard syntax */
-}
-
-/* line 48, ../sass/style.scss */
-.slick-prev {
-  left: -25px;
-}
-
-/* line 49, ../sass/style.scss */
-.slick-prev:before {
-  content: '\2190';
-}
-
-/* line 51, ../sass/style.scss */
-.slick-next {
-  right: -25px;
-}
-
-/* line 52, ../sass/style.scss */
-.slick-next:before {
-  content: '\2192';
-}
-
-/* line 54, ../sass/style.scss */
-.slick-dots {
-  position: absolute;
-  bottom: -45px;
-  list-style: none;
-  display: block;
-  text-align: center;
-  padding: 0px;
-  width: 100%;
-}
-
-/* line 63, ../sass/style.scss */
-.slick-dots li {
+/* Core style for every cell */
+/* line 5, ../sass/_gldp.scss */
+.gldp-flatwhite .core {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   position: relative;
-  display: inline-block;
-  height: 10px;
-  width: 10px;
-  margin: 0px 10px;
-  padding: 0px;
-  cursor: pointer;
-}
-
-/* line 72, ../sass/style.scss */
-.slick-dots li button {
-  border: 0;
-  background: #b5b5b5;
-  display: block;
-  height: 10px;
-  width: 10px;
-  outline: none;
-  line-height: 0;
-  font-size: 0;
-  color: transparent;
-  padding: 5px;
-  cursor: pointer;
-  outline: none;
-}
-
-/* line 85, ../sass/style.scss */
-.slick-dots li button:focus {
-  outline: none;
-}
-
-/* line 88, ../sass/style.scss */
-.slick-dots li button:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '\2022';
-  width: 10px;
-  height: 10px;
-  font-family: "slick";
-  font-size: 6px;
-  line-height: 10px;
+  float: left;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
   text-align: center;
-  color: black;
-  opacity: 0.25;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+  color: #222;
+  background: #ffffff;
 }
 
-/* line 104, ../sass/style.scss */
-.slick-dots li.slick-active button:before {
-  opacity: 1;
-}
-
-/* line 109, ../sass/style.scss */
-.slick-slide {
-  margin-right: 30px;
-  margin-left: 30px;
-}
-
-/* line 115, ../sass/style.scss */
-.triangle {
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0;
-  height: 0;
+/* Cell border */
+/* line 21, ../sass/_gldp.scss */
+.gldp-flatwhite .border {
   border-style: solid;
-  border-width: 15px 15px 0 15px;
-  border-color: #333333 transparent transparent transparent;
+  border-width: 0;
+  border-color: #fff;
 }
 
-/* line 124, ../sass/style.scss */
+/* Month/Year text and select */
+/* line 28, ../sass/_gldp.scss */
+.gldp-flatwhite .monyear,
+.gldp-flatwhite .monyear select {
+  font-size: 16px !important;
+  font-weight: bold;
+  background: #eee;
+}
+
+/* Month/Year text */
+/* line 36, ../sass/_gldp.scss */
+.gldp-flatwhite .monyear span {
+  margin: 0 5px 0 5px;
+}
+
+/* Prev/Next arrows */
+/* line 41, ../sass/_gldp.scss */
+.gldp-flatwhite .prev-arrow,
+.gldp-flatwhite .next-arrow {
+  color: #666;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+/* line 47, ../sass/_gldp.scss */
+.gldp-flatwhite .prev-arrow:active,
+.gldp-flatwhite .next-arrow:active {
+  color: #000;
+}
+
+/* line 52, ../sass/_gldp.scss */
+.gldp-flatwhite .prev-arrow-off,
+.gldp-flatwhite .next-arrow-off {
+  color: #000;
+  opacity: 0.15;
+}
+
+/* Days of the week */
+/* line 59, ../sass/_gldp.scss */
+.gldp-flatwhite .dow {
+  color: #222;
+  font-weight: bold;
+  cursor: wait !important;
+  background: #eee;
+}
+
+/* Weekdays */
+/* line 67, ../sass/_gldp.scss */
+.gldp-flatwhite .mon,
+.gldp-flatwhite .tue,
+.gldp-flatwhite .wed,
+.gldp-flatwhite .thu,
+.gldp-flatwhite .fri {
+  font-weight: bold;
+}
+
+/* Weekend days */
+/* line 76, ../sass/_gldp.scss */
+.gldp-flatwhite .sat,
+.gldp-flatwhite .sun {
+  color: #888;
+  font-weight: bold;
+}
+
+/* Selectable days that are outside of current month being shown */
+/* line 83, ../sass/_gldp.scss */
+.gldp-flatwhite .outday {
+  color: #aaa !important;
+}
+
+/* Hover */
+/* line 88, ../sass/_gldp.scss */
+.gldp-flatwhite .mon:hover,
+.gldp-flatwhite .tue:hover,
+.gldp-flatwhite .wed:hover,
+.gldp-flatwhite .thu:hover,
+.gldp-flatwhite .fri:hover,
+.gldp-flatwhite .sat:hover,
+.gldp-flatwhite .sun:hover {
+  background: #eee;
+}
+
+/* Non-Selectable days */
+/* line 99, ../sass/_gldp.scss */
+.gldp-flatwhite .noday {
+  color: #bbb;
+  font-weight: normal;
+  cursor: wait !important;
+  background: #ddd;
+}
+
+/* Currently selected day */
+/* line 107, ../sass/_gldp.scss */
+.gldp-flatwhite .selected {
+  color: #fff;
+  font-weight: bold;
+  border-color: #888;
+  background: #aaa;
+}
+
+/* Today */
+/* line 115, ../sass/_gldp.scss */
+.gldp-flatwhite .today {
+  color: #fff;
+  font-weight: bold;
+  border-color: #000;
+  background: #222;
+}
+
+/* Special */
+/* line 123, ../sass/_gldp.scss */
+.gldp-flatwhite .special {
+  color: #fff;
+  font-weight: bold;
+  border-color: #444;
+  background: #666;
+}
+
+/* line 9, ../sass/_generals.scss */
+body {
+  background: #f5f5f5;
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serifs;
+}
+
+/* line 3, ../sass/_sidebar.scss */
 .sidebar {
-  float: right;
-  max-width: 25%;
-  background-color: rgba(170, 141, 133, 0.5);
-  width: 400px;
-  height: 1200px;
-  color: white;
+  position: relative;
+  height: 100%;
+  width: 25%;
+  float: left;
+  border-right: 1px solid #999999;
+  box-sizing: border-box;
+}
+/* line 11, ../sass/_sidebar.scss */
+.sidebar h3 {
+  font-size: 20px;
 }
 
-/* line 133, ../sass/style.scss */
-.sb_content {
-  margin: 10px;
-  margin-left: 15px;
-  margin-right: 15px;
+/* line 17, ../sass/_sidebar.scss */
+.top-nav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #999999;
 }
-
-/* line 139, ../sass/style.scss */
-input {
-  width: 98%;
-  height: 20px;
-}
-
-/* line 144, ../sass/style.scss */
-#email {
-  border: 1px solid #99d658;
-  -webkit-box-shadow: 0px 0px 0px 2px rgba(153, 214, 88, 0.8);
-  -moz-box-shadow: 0px 0px 0px 2px rgba(153, 214, 88, 0.8);
-  box-shadow: 0px 0px 0px 2px rgba(153, 214, 88, 0.8);
-  border-radius: 1px;
-}
-
-/* line 154, ../sass/style.scss */
-#password {
-  border: 1px solid #f86556;
-  -webkit-box-shadow: 0px 0px 0px 2px rgba(248, 101, 86, 0.8);
-  -moz-box-shadow: 0px 0px 0px 2px rgba(248, 101, 86, 0.8);
-  box-shadow: 0px 0px 0px 2px rgba(248, 101, 86, 0.8);
-  border-radius: 1px;
-}
-
-/* line 164, ../sass/style.scss */
-#forgotPass {
-  border: 1px solid #9bc9fa;
-  -webkit-box-shadow: 0px 0px 0px 2px rgba(155, 201, 250, 0.8);
-  -moz-box-shadow: 0px 0px 0px 2px rgba(155, 201, 250, 0.8);
-  box-shadow: 0px 0px 0px 2px rgba(155, 201, 250, 0.8);
-  border-radius: 1px;
-}
-
-/* line 174, ../sass/style.scss */
-button {
-  color: rgba(133, 133, 133, 0.8);
-  box-shadow: inset 0px -1px 5px -1px rgba(0, 0, 0, 0.4);
-  border-radius: 7px;
-  width: 98%;
-  height: 30px;
-  font-size: 85%;
+/* line 21, ../sass/_sidebar.scss */
+.top-nav h3 {
+  color: #ff5d29;
   text-align: center;
-  background: -webkit-linear-gradient(white, rgba(255, 254, 255, 0.9));
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(white, rgba(255, 254, 255, 0.9));
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(white, rgba(255, 254, 255, 0.9));
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(white, rgba(255, 254, 255, 0.9));
-  /* Standard syntax */
+}
+/* line 25, ../sass/_sidebar.scss */
+.top-nav .toggle-setting {
+  position: absolute;
+  right: 10px;
+}
+/* line 29, ../sass/_sidebar.scss */
+.top-nav .toggle-nav {
+  position: absolute;
+  left: 10px;
 }
 
-/* line 185, ../sass/style.scss */
-#p1 {
-  cursor: pointer;
+/* line 35, ../sass/_sidebar.scss */
+.sidebar-content {
+  padding: 30px 10px 0 20px;
+}
+/* line 37, ../sass/_sidebar.scss */
+.sidebar-content > div:not(:last-child) {
+  margin-bottom: 40px;
+}
+/* line 41, ../sass/_sidebar.scss */
+.sidebar-content h3 {
+  margin-bottom: 28px;
+}
+
+/* line 45, ../sass/_sidebar.scss */
+.mini-cal {
+  padding-right: 10px;
+}
+/* line 47, ../sass/_sidebar.scss */
+.mini-cal #mydate {
+  visibility: hidden;
+}
+/* line 50, ../sass/_sidebar.scss */
+.mini-cal h3 {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+/* line 57, ../sass/_sidebar.scss */
+.filters input, .accounts input {
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+/* line 63, ../sass/_sidebar.scss */
+.sidebar-footer {
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  border-top: 1px solid #999999;
+}
+/* line 70, ../sass/_sidebar.scss */
+.sidebar-footer .link-container {
+  width: 100%;
+}
+/* line 73, ../sass/_sidebar.scss */
+.sidebar-footer a {
+  width: 100%;
   display: inline-block;
-  margin: 5px;
-  margin-top: 10px;
-  margin-left: 20px;
-  border-radius: 1px;
+  font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #999999;
+  text-align: center;
+  vertical-align: center;
+}
+/* line 84, ../sass/_sidebar.scss */
+.sidebar-footer a:first-child {
+  margin-bottom: 15px;
 }
 
-/* line 194, ../sass/style.scss */
-#p2 {
-  cursor: pointer;
+/* line 1, ../sass/_main-calendar.scss */
+.calendar {
+  float: left;
+  width: 75%;
+  box-sizing: border-box;
+}
+
+/* line 7, ../sass/_main-calendar.scss */
+.calendar-header {
+  background: #f5f5f5;
+  padding: 15px 0;
+  width: 100%;
+  height: 51px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #999999;
+}
+/* line 14, ../sass/_main-calendar.scss */
+.calendar-header > * {
   display: inline-block;
-  margin: 5px;
-  margin-top: 5px;
-  margin-left: 20px;
-  border-radius: 1px;
 }
-
-/* line 203, ../sass/style.scss */
-#p3 {
+/* line 16, ../sass/_main-calendar.scss */
+.calendar-header > * > * {
+  vertical-align: top;
+}
+/* line 22, ../sass/_main-calendar.scss */
+.calendar-header .center-nav button {
+  margin: 0 3px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #999999;
+}
+/* line 28, ../sass/_main-calendar.scss */
+.calendar-header .center-nav button.active {
+  color: #ff5d29;
+}
+/* line 31, ../sass/_main-calendar.scss */
+.calendar-header .center-nav button.prev, .calendar-header .center-nav button.next {
+  color: black;
+  font-weight: bold;
+  transform: scale(1, 1.5);
+}
+/* line 36, ../sass/_main-calendar.scss */
+.calendar-header .center-nav button:hover {
   cursor: pointer;
-  display: inline-block;
-  margin: 5px;
-  margin-top: 5px;
-  margin-left: 20px;
-  border-radius: 1px;
 }
-
-/* line 212, ../sass/style.scss */
-.accordion1 {
+/* line 40, ../sass/_main-calendar.scss */
+.calendar-header .center-nav .logo {
+  display: inline-block;
+}
+/* line 42, ../sass/_main-calendar.scss */
+.calendar-header .center-nav .logo img {
+  margin: 0 5px;
+  height: 24px;
+}
+/* line 47, ../sass/_main-calendar.scss */
+.calendar-header .center-nav span {
+  font-size: 20px;
+}
+/* line 52, ../sass/_main-calendar.scss */
+.calendar-header input {
+  padding: 3px 7px;
+  border: 1px solid #999999;
+  border-radius: 10px;
+}
+/* line 58, ../sass/_main-calendar.scss */
+.calendar-header .search {
+  position: relative;
+}
+/* line 60, ../sass/_main-calendar.scss */
+.calendar-header .search:after {
+  content: url("../images/search.png");
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+/* line 66, ../sass/_main-calendar.scss */
+.calendar-header .search:focus {
+  outline: none;
+}
+/* line 70, ../sass/_main-calendar.scss */
+.calendar-header .left-search {
+  float: left;
   margin-left: 20px;
+}
+/* line 74, ../sass/_main-calendar.scss */
+.calendar-header .right-search {
+  float: right;
   margin-right: 20px;
 }
 
-/* line 218, ../sass/style.scss */
-.accordion2 {
-  display: none;
-  margin-left: 20px;
-  margin-right: 20px;
+/* line 80, ../sass/_main-calendar.scss */
+.weekdays {
+  border-bottom: 1px solid #999999;
+  box-sizing: border-box;
+}
+/* line 83, ../sass/_main-calendar.scss */
+.weekdays .week-number, .weekdays a {
+  text-align: center;
+  padding: 10px 0;
+}
+/* line 87, ../sass/_main-calendar.scss */
+.weekdays .week-number {
+  font-weight: 700;
+  border-right: 1px solid #999999;
+}
+/* line 91, ../sass/_main-calendar.scss */
+.weekdays a {
+  text-decoration: none;
+  color: black;
+}
+/* line 95, ../sass/_main-calendar.scss */
+.weekdays a.active {
+  color: #ff5d29;
+}
+/* line 98, ../sass/_main-calendar.scss */
+.weekdays a.prev-week {
+  color: #999999;
 }
 
-/* line 225, ../sass/style.scss */
-.accordion3 {
-  display: none;
-  margin-left: 20px;
-  margin-right: 20px;
+/* line 103, ../sass/_main-calendar.scss */
+.time {
+  border-right: 1px solid #999999;
+}
+/* line 105, ../sass/_main-calendar.scss */
+.time .time-holder {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  height: 75px;
+  text-align: center;
+}
+/* line 111, ../sass/_main-calendar.scss */
+.time .time-holder span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -8px;
+}
+
+/* line 121, ../sass/_main-calendar.scss */
+.calendar-content {
+  position: relative;
+}
+/* line 123, ../sass/_main-calendar.scss */
+.calendar-content .event-holder {
+  height: 75px;
+  box-sizing: border-box;
+  border-right: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+}
+
+/* line 132, ../sass/_main-calendar.scss */
+.actual-events {
+  position: absolute;
+  top: 1px;
+  width: 100%;
+}
+/* line 136, ../sass/_main-calendar.scss */
+.actual-events .event {
+  width: 94%;
+  margin-left: 3%;
+  box-sizing: border-box;
+}
+/* line 141, ../sass/_main-calendar.scss */
+.actual-events .event-1 {
+  position: absolute;
+  top: 75px;
+  height: 150px;
+  background-color: rgba(170, 197, 229, 0.7);
+  border-left: 2px solid #aac5e5;
 }

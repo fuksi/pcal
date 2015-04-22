@@ -51,11 +51,74 @@ body{
 .slick-next { right: -25px; }
 .slick-next:before { content: '\2192'; }
 
-.slick-slide{
-margin-right: 30px;
-margin-left: 30px;
+.slick-dots { 
+	position: absolute; 
+	bottom: -45px;
+	list-style: none; 
+	display: block; 
+	text-align: center; 
+	padding: 0px; 
+	width: 100%; 
+}
+.slick-dots li {
+	position: relative; 
+	display: inline-block; 
+	height: 10px; 
+	width: 10px; 
+	margin: 0px 10px; 
+	padding: 0px; 
+	cursor: pointer; 
+}
+.slick-dots li button { 
+	border: 0; 
+	background: #b5b5b5; 
+	display: block; 
+	height: 10px; 
+	width: 10px; 
+	outline: none; 
+	line-height: 0; 
+	font-size: 0; 
+	color: transparent; 
+	padding: 5px; 
+	cursor: pointer; 
+	outline: none; }
+.slick-dots li button:focus { 
+	outline: none; 
+}
+.slick-dots li button:before { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	content: '\2022'; 
+	width: 10px; 
+	height: 10px; 
+	font-family: "slick"; 
+	font-size: 6px; 
+	line-height: 10px; 
+	text-align: center; 
+	color: black; 
+	opacity: 0.25; 
+	-webkit-font-smoothing: antialiased; 
+	-moz-osx-font-smoothing: grayscale; 
+}
+.slick-dots li.slick-active button:before { 
+	opacity: 1; 
 }
 
+
+.slick-slide{
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+
+.triangle{
+	left:0;right:0;margin:auto;width:0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 15px 0 15px;
+	border-color: #333333 transparent transparent transparent;
+}
 //------------------------- SIDEBAR AREA -----------------------------//
 
 .sidebar {
