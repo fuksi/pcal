@@ -32,13 +32,14 @@ $(document).ready(function() {
 
 
 	// slick SLIDER
-	$('.carousel').slick({
+	$('.slider').slick({
 		arrows: true,
 		dots: true,
 		infinite: true,
 		speed: 300,
-		slidesToShow: 1,
+		slidesToShow: 2,
 		centerMode: false,
-		variableWidth: true
+		variableWidth: true,
+    	centerPadding: '60px'
 	});
 });
