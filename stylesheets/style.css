@@ -4556,35 +4556,27 @@ table {
   fonrt-size: 0.000001%;
 }
 
-/* line 15, ../sass/style.scss */
-body {
-  background-image: url("../img/background.jpg");
-  position: relative;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  font-family: Roboto;
-  background-repeat: no-repeat;
-  font-family: roboto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 @font-face {
   font-family: roboto;
   src: url("../fonts/roboto/Roboto-Regular.ttf");
   font-size: 24px;
 }
-/* line 38, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
+body {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  height: 100%;
+  font-family: Roboto;
+  background-repeat: no-repeat;
+  font-family: roboto;
+}
+
+/* line 34, ../sass/style.scss */
 .main {
-  float: left;
   max-width: 75%;
   position: absolute;
-  margin-left: 0;
   width: 75%;
-  height: 1200px;
+  height: 100%;
   background: -webkit-linear-gradient(rgba(255, 56, 0, 0.6), rgba(255, 114, 76, 0.6));
   /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(rgba(255, 56, 0, 0.6), rgba(255, 114, 76, 0.6));
@@ -4595,33 +4587,33 @@ body {
   /* Standard syntax */
 }
 
-/* line 51, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 #slider {
   margin-top: 10%;
-  margin-left: 15%;
+  display: inline-block;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 .slick-prev {
   left: -25px;
 }
 
-/* line 60, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 .slick-prev:before {
   content: '\2190';
 }
 
-/* line 62, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .slick-next {
   right: -25px;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .slick-next:before {
   content: '\2192';
 }
 
-/* line 66, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 .slick-dots {
   position: absolute;
   bottom: -45px;
@@ -4632,7 +4624,7 @@ body {
   width: 100%;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .slick-dots li {
   position: relative;
   display: inline-block;
@@ -4643,7 +4635,7 @@ body {
   cursor: pointer;
 }
 
-/* line 86, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .slick-dots li button {
   border: 0;
   background: #b5b5b5;
@@ -4659,12 +4651,12 @@ body {
   outline: none;
 }
 
-/* line 101, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .slick-dots li button:focus {
   outline: none;
 }
 
-/* line 105, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .slick-dots li button:before {
   position: absolute;
   top: 0;
@@ -4682,68 +4674,98 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 122, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .slick-dots li.slick-active button:before {
   opacity: 1;
 }
 
-/* line 127, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 .slick-slide {
   margin-right: 30px;
   margin-left: 30px;
 }
 
-/* line 142, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 .sidebar {
-  float: right;
+  margin-left: 75%;
   max-width: 25%;
   background-color: rgba(170, 141, 133, 0.5);
   width: 25%;
-  height: 1200px;
+  height: 100vh;
   color: white;
 }
+/* line 146, ../sass/style.scss */
+.sidebar .newAcc {
+  border-bottom: 1px solid white;
+}
+/* line 149, ../sass/style.scss */
+.sidebar .signIn {
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+/* line 153, ../sass/style.scss */
+.sidebar .resetPass {
+  border-top: 1px solid white;
+}
+/* line 156, ../sass/style.scss */
+.sidebar .newAcc, .sidebar .signIn, .sidebar .resetPass {
+  padding: 10px 5px 10px 20px;
+}
+/* line 159, ../sass/style.scss */
+.sidebar p {
+  line-height: 20px;
+}
+/* line 161, ../sass/style.scss */
+.sidebar p a {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+  display: inline-block;
+  padding-bottom: 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
 
-/* line 151, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .sb_content {
   margin: 10px;
   margin-left: 15px;
   margin-right: 15px;
 }
 
-/* line 157, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 input {
   width: 98%;
-  height: 20px;
+  height: 41px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
-/* line 162, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 #email {
   border: 1px solid #99d658;
   -webkit-box-shadow: 0px 0px 0px 2px rgba(153, 214, 88, 0.8);
   -moz-box-shadow: 0px 0px 0px 2px rgba(153, 214, 88, 0.8);
   box-shadow: 0px 0px 0px 2px rgba(153, 214, 88, 0.8);
-  border-radius: 1px;
 }
 
-/* line 172, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 #password {
   border: 1px solid #f86556;
   -webkit-box-shadow: 0px 0px 0px 2px rgba(248, 101, 86, 0.8);
   -moz-box-shadow: 0px 0px 0px 2px rgba(248, 101, 86, 0.8);
   box-shadow: 0px 0px 0px 2px rgba(248, 101, 86, 0.8);
-  border-radius: 1px;
 }
 
-/* line 182, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 #forgotPass {
   border: 1px solid #9bc9fa;
   -webkit-box-shadow: 0px 0px 0px 2px rgba(155, 201, 250, 0.8);
   -moz-box-shadow: 0px 0px 0px 2px rgba(155, 201, 250, 0.8);
   box-shadow: 0px 0px 0px 2px rgba(155, 201, 250, 0.8);
-  border-radius: 1px;
 }
 
-/* line 192, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 button {
   color: rgba(133, 133, 133, 0.8);
   box-shadow: inset 0px -1px 5px -1px rgba(0, 0, 0, 0.4);
@@ -4762,52 +4784,37 @@ button {
   /* Standard syntax */
 }
 
-/* line 203, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 #p1 {
   cursor: pointer;
-  display: inline-block;
-  margin: 5px;
-  margin-top: 10px;
-  margin-left: 20px;
   border-radius: 1px;
 }
 
-/* line 212, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 #p2 {
   cursor: pointer;
-  display: inline-block;
-  margin: 5px;
-  margin-top: 5px;
-  margin-left: 20px;
   border-radius: 1px;
 }
 
-/* line 221, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 #p3 {
   cursor: pointer;
-  display: inline-block;
-  margin: 5px;
-  margin-top: 5px;
-  margin-left: 20px;
   border-radius: 1px;
 }
 
-/* line 230, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .accordion1 {
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 20px;
 }
 
-/* line 236, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 .accordion2 {
   display: none;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 20px;
 }
 
-/* line 243, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .accordion3 {
   display: none;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 20px;
 }
