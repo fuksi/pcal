@@ -14,7 +14,7 @@ Version:1.0
 
 body{
 	background-image: url("../img/background.jpg");
-	position: fixed; 
+	position: relative; 
   	top: 0; 
   	left: 0;
     background-size: cover;
@@ -23,6 +23,8 @@ body{
     font-family: Roboto;
     background-repeat: no-repeat;
     font-family: roboto;
+    margin-left: auto;
+    margin-right: auto;	
 }
 
 @font-face {
@@ -38,17 +40,27 @@ body{
 	max-width: 75%;
 	position: absolute;
 	margin-left:0;
-	width: 1200px;
-	height: 1000px;
+	width: 75%;
+	height: 1200px;
 	@include linear-gradient (rgba(255, 56, 0, 0.6), rgba(255,114,76, 0.6));
 
 }
 
 //------slick slider------//
+
+#slider {
+	margin-top: 10%;
+	margin-left: 15%;
+}
+
+
+
 .slick-prev { left: -25px; }
+
 .slick-prev:before { content: '\2190'; }
 
 .slick-next { right: -25px; }
+
 .slick-next:before { content: '\2192'; }
 
 .slick-dots { 
@@ -60,6 +72,7 @@ body{
 	padding: 0px; 
 	width: 100%; 
 }
+
 .slick-dots li {
 	position: relative; 
 	display: inline-block; 
@@ -69,6 +82,7 @@ body{
 	padding: 0px; 
 	cursor: pointer; 
 }
+
 .slick-dots li button { 
 	border: 0; 
 	background: #b5b5b5; 
@@ -81,10 +95,13 @@ body{
 	color: transparent; 
 	padding: 5px; 
 	cursor: pointer; 
-	outline: none; }
+	outline: none; 
+}
+
 .slick-dots li button:focus { 
 	outline: none; 
 }
+
 .slick-dots li button:before { 
 	position: absolute; 
 	top: 0; 
@@ -101,6 +118,7 @@ body{
 	-webkit-font-smoothing: antialiased; 
 	-moz-osx-font-smoothing: grayscale; 
 }
+
 .slick-dots li.slick-active button:before { 
 	opacity: 1; 
 }
@@ -112,20 +130,20 @@ body{
 }
 
 
-.triangle{
-	left:0;right:0;margin:auto;width:0;
-	height: 0;
-	border-style: solid;
-	border-width: 15px 15px 0 15px;
-	border-color: #333333 transparent transparent transparent;
-}
+// .triangle{
+// 	left:0;right:0;margin:auto;width:0;
+// 	height: 0;
+// 	border-style: solid;
+// 	border-width: 15px 15px 0 15px;
+// 	border-color: #333333 transparent transparent transparent;
+// }
 //------------------------- SIDEBAR AREA -----------------------------//
 
 .sidebar {
 	float: right;
 	max-width: 25%;
 	background-color: rgba(170, 141, 133, 0.5);
-	width: 400px;
+	width: 25%;
 	height: 1200px;
 	color: white;
 }
@@ -182,14 +200,14 @@ text-align: center;
 @include linear-gradient (rgba(255, 255, 255, 1), rgba(255, 254, 255, 0.9));
 }
 
-// #p1{
-// 	cursor: pointer;
-// 	display: inline-block;
-// 	margin: 5px;
-// 	margin-top: 10px;
-// 	margin-left: 20px;
-// 	border-radius: 1px;
-// }
+#p1{
+	cursor: pointer;
+	display: inline-block;
+	margin: 5px;
+	margin-top: 10px;
+	margin-left: 20px;
+	border-radius: 1px;
+}
 
 #p2{
 	cursor: pointer;
