@@ -1,0 +1,32 @@
+// Float left in bootstrap columns force elements to have display: block
+// make text-align ineffective. Alternatives
+// 1. Wrap block elements into an inline-block
+// 2. Reset direct children elements float to none, since if you're 'text-align'-ing, float:left is redundant.
+
+
+.block-center {
+	text-align: center;
+}
+
+.block-left {
+	text-align: left;
+}
+
+.block-right {
+	text-align: right;
+}
+
+.block-justify {
+	text-align: justify;	
+}
+
+.block-center > *, .block-left > *, .block-right > *, .block-justify > * {
+	float: none;
+}
+
+.block-justify:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+	font-size: 0.000001%;
+}

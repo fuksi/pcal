@@ -1,0 +1,375 @@
+<html>
+<head>
+	<title>pCal</title>
+
+	<!-- Enqueuing styles -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="main/stylesheets/style.css">
+
+	<!-- Enqueuing scripts -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="main/js/glDatePicker.min.js"></script>
+	<script type="text/javascript" src="main/js/main.js"></script>
+</head>
+<body>
+	<div class="main-container">
+
+
+	<!-- Sidebar templating -->
+
+		<div class="sidebar">    
+			<div class="top-nav">
+				<img class="toggle-nav" src="main/images/toggle-nav.png"></img>
+				<img class="toggle-setting" src="main/images/toggle-setting.png"></img>
+				<h3 class="block-centert">Phuc D.T Thien</h3>
+			</div>
+
+			<div class="sidebar-content">
+
+				<div class="mini-cal">
+					<h3>Calendar</h3>
+					<input type="text" id="mydate" gldp-id="mydate" />
+				    <div gldp-el="mydate"
+				        style="width:250px; height:200px;">
+				    </div>
+				</div>
+
+				<div class="filters">
+					<h3>Add event</h3>
+					<select style="margin-bottom: 10px" id="color" name="color" form="add-event">
+					  <option value="blue" selected="selected">Blue</option>
+					  <option value="red" selected="selected">Red</option>
+					</select>
+					<form action="http://gofullstack.me:8000/addevent" method="post" id="add-event">
+						
+						<input type="text" id="event-name" name="name" placeholder="What to do?">
+						<input type="text" id="date" name="date" placeholder="What date">
+						<input type="text" id="start" name="time" placeholder="What time">
+						<input type="text" id="duration" name="duration" placeholder="How long">
+						<input type="submit" id="submit-event">
+					</form>
+
+					
+				</div>
+
+				<div class="accounts">
+					<h3>Accounts</h3>
+					<form>
+						<input type="checkbox" value="tech" name="filters">Gmail<br>
+						<input type="checkbox" value="fb" name="filters">iCloud<br>
+					</form>
+				</div>
+
+			</div>
+
+			<div class="sidebar-footer block-center">
+				<div class="link-container">
+					<a href="#">Download pCal for Mac</a>
+					<a href="#">Support and feedback</a>
+				</div>
+			</div>
+		</div>
+
+	<!-- End sidebar templating -->
+
+	<!-- Main calendar -->
+		<div class="calendar row">
+			<!-- Header -->
+			<div class="calendar-header block-center">
+				<div class="search left-search">
+					<input type="text" name="event-search" placeholder="find event i.e baz">
+				</div>
+				<div class="center-nav">
+					<button class="active week">Week</button>
+					<span>|</span><button class="month">Month</button>
+					<button class="prev">&lt;</button>
+					<a class="logo" href="#">
+						<img src="main/images/logo.png">
+					</a>
+					<button class="next">&gt;</button>
+					<button class="active me">Me</button>
+					<span>|</span><button class="other">Bar's cal</button>
+				</div>
+				<div class="search right-search">	
+					<input type="text" name="calendar-search" placeholder="Find out if Bar is free tmr">
+				</div>
+			</div>
+			<!-- End header -->
+
+			<!-- Week days row -->
+			<div class="weekdays row">
+				<span class="col-xs-2 week-number">W 11</span>
+				<a href="#" class="col-xs-3 prev-week">Sun 3/5</a>
+				<a href="#" class="col-xs-3">Mon 4/5</a>
+				<a href="#" class="col-xs-3">Tue 5/5</a>
+				<a href="#" class="col-xs-3 active">Wed 6/5</a>
+				<a href="#" class="col-xs-3">Thu 7/5</a>
+				<a href="#" class="col-xs-3">Fri 8/5</a>
+				<a href="#" class="col-xs-3">Sat 9/5</a>
+			</div>
+			<!-- End week days row -->
+
+			<!-- Time and events -->
+			<div class="time-events row">
+				<div class="time col-xs-2">
+					<div class="time-holder"><span>6 AM</span></div>
+					<div class="time-holder"><span>7 AM</span></div>
+					<div class="time-holder"><span>8 AM</span></div>
+					<div class="time-holder"><span>9 AM</span></div>
+					<div class="time-holder"><span>10 AM</span></div>
+					<div class="time-holder"><span>11 AM</span></div>
+					<div class="time-holder"><span>12 AM</span></div>
+					<div class="time-holder"><span>1 PM</span></div>
+					<div class="time-holder"><span>2 PM</span></div>
+					<div class="time-holder"><span>3 PM</span></div>
+					<div class="time-holder"><span>4 PM</span></div>
+					<div class="time-holder"><span>5 PM</span></div>
+					<div class="empty-time-holder time-holder"></div>
+				</div>
+
+				<div class="calendar-content sun wide-col-xs-3">
+					<div class="event-holders">
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+					</div>
+					<div class="actual-events">
+					</div>
+				</div>
+
+
+				<div class="calendar-content mon wide-col-xs-3">
+					<div class="event-holders">
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+					</div>
+					<div class="actual-events">
+					</div>
+				</div>
+
+
+				<div class="calendar-content tue wide-col-xs-3">
+					<div class="event-holders">
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+					</div>
+					<div class="actual-events">
+					</div>
+				</div>
+
+
+				<div class="calendar-content wed wide-col-xs-3">
+					<div class="event-holders">
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+					</div>
+					<div class="actual-events">
+					</div>
+				</div>
+
+
+				<div class="calendar-content thu wide-col-xs-3">
+					<div class="event-holders">
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+					</div>
+					<div class="actual-events">
+					</div>
+				</div>	
+
+				<div class="calendar-content fri wide-col-xs-3">
+					<div class="event-holders">
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+					</div>
+					<div class="actual-events">
+					</div>
+				</div>
+
+				<div class="calendar-content sat wide-col-xs-3">
+					<div class="event-holders">
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+						<div class="event-holder">
+						</div>
+					</div>
+					<div class="actual-events">
+					</div>
+				</div>
+
+				<!-- <div class="placeholder">
+				</div> -->
+			</div>
+		</div>
+
+	<!-- End main calendar -->
+
+
+	</div>
+</body>
+</html>
