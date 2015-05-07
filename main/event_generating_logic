@@ -1,0 +1,41 @@
+Writing users:
+
+	- username: no space
+	- password:
+	- email:
+Writing events:
+
+	- Creating group
+		+ Group name
+		+ Permission public / private
+	- Creating event:
+	 	+ Name
+	 	+ Date
+	 	+ Start
+	 	+ End
+
+Reading events:
+	- All of users event will be loaded in the background, although 
+	  for the current screen/week, we will filter with time
+	  to have events for that week only.
+
+	- Generating event
+		+ Event is put in columns according to their day of the week
+		+ Length of event is 75px / hour
+		+ Position of event on the column is determined by offset (top: ? px) based of starting time of the event
+		  for example: event start at 0 am have no offset, while at 2 am have 75 * 2 = 150 offset top
+		+ Width of event: an comparing operation is done between all events in one day
+		  Then e.g. only 1 event during 1 period of time: use class event-full
+		  				 2 event during 2 period of time: use class event-half
+		  				 3 event during 3 period of time: use class event-third and this is the maximum
+		  A callback should be made while creating event to prevent > 3 events during 1 period of time.
+
+
+	- To generate event, these information are need
+	    + Date
+	    + When the event starts
+	    + When it ends
+	    + To which group in belongs
+
+
+	- For a different user, just request the database, and use the same process
